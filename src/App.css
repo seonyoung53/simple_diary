@@ -21,6 +21,7 @@ textarea {
   width: 300px;
   padding: 10px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .DiaryEditor button {
@@ -59,4 +60,8 @@ textarea {
   font-weight: bold;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+.DiaryHeader {
+  font-size: 1.25rem;
 }

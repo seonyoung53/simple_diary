@@ -12,15 +12,14 @@ const UnmountTest = () => {
 };
 
 const Lifecycle = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const toggle = () => setIsVisible(!isVisible);
-
-  return (
-    <div style={{ padding: 20 }}>
-      <button onClick={toggle}>ON/OFF</button>
-      {isVisible && <UnmountTest />}
-    </div>
-  );
+  // const [isVisible, setIsVisible] = useState(false);
+  // const toggle = () => setIsVisible(!isVisible);
+  // return (
+  //   <div style={{ padding: 20 }}>
+  //     <button onClick={toggle}>ON/OFF</button>
+  //     {isVisible && <UnmountTest />}
+  //   </div>
+  // );
 };
 // 단락 회로 평가
 
