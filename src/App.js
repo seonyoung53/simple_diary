@@ -2,7 +2,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
 import DiaryEditor from "./DiaryEditor";
 import DiaryList from "./DiaryList";
-import Lifecycle from "./Lifecycle";
 
 const App = () => {
   const [data, setData] = useState([]); // 배열이 초기값
@@ -57,8 +56,6 @@ const App = () => {
   };
 
   const getDiaryAnalysis = useMemo(() => {
-    console.log("일기 분석 시작");
-
     const goodCount = data.filter((it) => it.emotion >= 3).length;
     const badCount = data.length - goodCount;
     const goodRatio = (goodCount / data.length) * 100;
@@ -69,7 +66,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <Lifecycle />
       <DiaryEditor onCreate={onCreate} />
       <div>전체 일기 : {data.length}</div>
       <div>기분이 좋은 일기 개수 : {goodCount}</div>
